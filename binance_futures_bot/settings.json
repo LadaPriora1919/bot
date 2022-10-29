@@ -1,0 +1,8 @@
+{
+	"market": "BTCUSDT",
+	"leverage": "20",
+	"trading_periods": "5m,1h",
+	"margin_type": "CROSSED",
+	"trailing_percentage": "2.0",
+	"api_url" : "https://fapi.binance.com"
+}
