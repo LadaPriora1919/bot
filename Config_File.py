@@ -1,6 +1,6 @@
 ##fill in your API keys here to be accessed by other scripts
-API_KEY = '3I5mWkcakr4vmVWAndAg3nrcDDv4VkwQp7s2aNrtD5iHMZ3yksxsxc074mECNjbL'
-API_SECRET = 'q4vZ6ZLHYRC2sYlB39g8fZtiXo5SPGReD3bqdOkXsqgjYp0g6vvmTtyO6ob6eBcf'
+API_KEY = '4K4igHz5vGTrFnz5y3RUgfa1p6YMl3iIFj84lP2G3dXGc9mJuDOKwXs2z3el1XKL'
+API_SECRET = 'Wd5JE3pf8MRnkTvibcQr7Q2LiWBdhH0zbyFlIc9ZDiWaCbvEolxvtEVs4NzxEVXk'
 
 ################## settings, these are very strategy dependant ensure you have enough data for your chosen strategy ##################################
 order_Size = 20  ## As % of account, i.e 2.5 = 2.5%
