@@ -122,7 +122,7 @@ def start(crypto_symbol):
                     percent = (second / third - 1) * 100
                     #start_balance = end_balance
                     time.sleep(3)
-                percent = (second / symbol - 1) * 100
+                percent = (second / third - 1) * 100
                 print(symbol)
                 print(third,'USDT')
                 print(second,'USDC')
@@ -133,7 +133,7 @@ def start(crypto_symbol):
                     print(third,'USDT')
                     print(second,'USDC')
                     print(percent)
-                    message = symbol+'USDT->'+symbol+'USDC->'+'USDCUSDT\nUSDT '+str(third)+'\nUSDC '+str(second)
+                    message = 'USDCUSDT->'+symbol+'USDC->'+symbol+'USDT\nUSDT '+str(third)+'\nUSDC '+str(second)
                     print(message)
                     #end_balance = get_balance('USDT')
                     #message = 'Начальный баланс: ' + str(start_balance) + '\n' + message + '\nКонечный баланс: ' + str(end_balance)
