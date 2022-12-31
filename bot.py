@@ -99,7 +99,7 @@ def start(crypto_symbol):
                 time.sleep(1)
                 #start_balance = get_balance('USDT')
                 first, second, third = get_prices(symbol)
-                percent = (third / second - 1) * 100
+                percent = (second / third - 1) * 100
                 print(symbol)
                 print(third,'USDT')
                 print(second,'USDC')
@@ -122,7 +122,7 @@ def start(crypto_symbol):
                     percent = (second / third - 1) * 100
                     #start_balance = end_balance
                     time.sleep(3)
-                percent = (second / third - 1) * 100
+                percent = (third / second - 1) * 100
                 print(symbol)
                 print(third,'USDT')
                 print(second,'USDC')
@@ -142,7 +142,7 @@ def start(crypto_symbol):
                     requests.get(
                         'https://api.telegram.org/bot5814069489:AAEkWaGh5kaWePUH6vCyf_cCAeKQd_GO30M/sendMessage?chat_id=355611262&text=' + message)
                     first, second, third = get_prices(symbol)
-                    percent = (second / third - 1) * 100
+                    percent = (third / second - 1) * 100
                     #start_balance = end_balance
                     time.sleep(3)
         except Exception:
