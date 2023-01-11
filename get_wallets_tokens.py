@@ -9,6 +9,7 @@ def get_wallets_tokens():
         wallet_token_dict = {}
         with open('wallets.txt') as f:
             for address in f:
+                time.sleep(5)
                 address = address.replace('\n', '')
                 tokens_list = []
                 wallet_info = requests.get('https://api.ethplorer.io/getAddressInfo/'+address+'?apiKey=freekey').json()
