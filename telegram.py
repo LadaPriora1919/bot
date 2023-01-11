@@ -48,4 +48,5 @@ except Exception:
     bot.polling(none_stop=True, interval=0)
 
 
-bot.polling(none_stop=True, interval=0)
+def telegram_start():
+    bot.polling(none_stop=True, interval=0)

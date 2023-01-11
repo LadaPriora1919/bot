@@ -6,13 +6,13 @@ import requests
 
 def get_wallets_tokens():
     try:
+        time.sleep(5)
         wallet_token_dict = {}
         with open('wallets.txt') as f:
             for address in f:
-                time.sleep(5)
                 address = address.replace('\n', '')
                 tokens_list = []
-                wallet_info = requests.get('https://api.ethplorer.io/getAddressInfo/'+address+'?apiKey=freekey').json()
+                wallet_info = requests.get('https://api.ethplorer.io/getAddressInfo/'+address+'?apiKey=EK-75ZNR-kyDJyJY-WCNoJ').json()
                 for i in wallet_info['tokens']:
                     try:
                         tokens_list += [i['tokenInfo']['symbol']]

