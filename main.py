@@ -242,5 +242,5 @@ if __name__ == '__main__':
             requests.get(
                 'https://api.telegram.org/6265786615:AAGc04IPl77A246JW78nXLFMvGaXHDergbY/sendMessage?chat_id=400635213&text=' + e)
             print(e, 'error')
-            await asyncio.sleep(5)
+            time.sleep(5)
             continue
